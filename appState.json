@@ -1,0 +1,131 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "517039af-c723-4d2a-85e7-9598895ce0a4": {
+        "id": "517039af-c723-4d2a-85e7-9598895ce0a4",
+        "parent": null,
+        "name": "createChineseTable2.py",
+        "type": "PYTHON_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "createChineseTable2.py",
+        "cursor": {
+          "lineNumber": 22,
+          "column": 1
+        },
+        "config": {
+          "runtime": "python3.8",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "createChineseTable2"
+        },
+        "triggers": [],
+        "lastUpdated": 1622280756444,
+        "testCases": {
+          "98ad8645-65c1-4148-813d-fd1a33142ca0": {
+            "id": "98ad8645-65c1-4148-813d-fd1a33142ca0",
+            "name": "Test event",
+            "functionId": "517039af-c723-4d2a-85e7-9598895ce0a4",
+            "event": "{\r\n    \"key1\": \"value1\",\r\n    \"key2\": \"value2\",\r\n    \"key3\": \"value3\"\r\n}",
+            "eventTemplate": "hello-world"
+          }
+        }
+      },
+      "071fb199-c1e8-4192-b82f-f4fa2763c1ad": {
+        "id": "071fb199-c1e8-4192-b82f-f4fa2763c1ad",
+        "parent": null,
+        "name": "requirements.txt",
+        "type": "TEXT_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "requirements.txt"
+      }
+    },
+    "openFiles": [
+      "517039af-c723-4d2a-85e7-9598895ce0a4"
+    ],
+    "currentFileId": "517039af-c723-4d2a-85e7-9598895ce0a4",
+    "resources": {
+      "ddbChineseAnimal": {
+        "name": "ddbChineseAnimal",
+        "type": "DynamoDB",
+        "config": {
+          "mode": 0,
+          "table": {
+            "arn": "",
+            "name": "ChineseAnimal",
+            "partitionKey": "BirthYear",
+            "partitionKeyType": "N",
+            "hasSortKey": false,
+            "sortKey": "",
+            "sortKeyType": "S",
+            "payPerRequest": true,
+            "mode": 0
+          },
+          "isGlobalEditMode": true,
+          "parameters": {
+            "Key": {},
+            "Item": {},
+            "ExpressionAttributeValues": {},
+            "IndexName": ""
+          },
+          "triggerParams": {},
+          "validator": {
+            "validatableFields": {},
+            "validity": true
+          },
+          "valid": true
+        }
+      }
+    },
+    "customTemplate": {
+      "syntax": "JSON",
+      "overrideDefault": false,
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {
+        "boto3": {
+          "name": "boto3",
+          "language": "python",
+          "version": "1.16.43",
+          "dev": true,
+          "notRemovable": false
+        }
+      }
+    }
+  },
+  "PROJECT_META": {
+    "sigmaVersion": "1.8.0",
+    "projectName": "createChineseTable2",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-2",
+    "platform": "AWS",
+    "language": "python",
+    "platformRegions": {},
+    "lastSave": 1622283349788
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "createchinesetable2",
+      "url": "https://github.com/aladaf/createchinesetable2"
+    }
+  }
+}
